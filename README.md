@@ -2,7 +2,7 @@ Para poder correr el programa necesitaremos lo siguiente:
 
 1. Tener instalado algun IDE (Como Visual studio Code).
 2. Tener instalado python (Se puede descargar desde la pagina oficial e instalar como cualquier otro programa).
-3. Instalar flask desde la terminal (usar el comando: install flask requests).
+3. Instalar flask desde la terminal (usar el comando: pip install flask requests).
 4. Correr el programa desde la terminal (usar comando: flask run).
 5. Con el paso 4 se nos proporcionara una url(local). Se puede copiar la url y seguidamente pegar en el navegador, para que se muestre la pagina.
 
