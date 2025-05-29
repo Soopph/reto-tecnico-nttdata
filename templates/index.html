@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Personas</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Lista de Personas</h1>
+    <div id="personas-container"></div>
+
+    <script>
+        async function cargarPersonas() {
+            try {
+                const res = await fetch('/api/persons');
+                const personas = await res.json();
+                const container = document.getElementById('personas-container');
+
+                personas.forEach(p => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <img src="${p.fotografia}" alt="Foto de ${p.nombre}">
+                        <h3>${p.nombre}</h3>
+                        <p><strong>Género:</strong> ${p.genero}</p>
+                        <p><strong>Ubicación:</strong> ${p.ubicacion}</p>
+                        <p><strong>Correo:</strong> ${p.correo_electronico}</p>
+                        <p><strong>Fecha de nacimiento:</strong> ${p.fecha_nacimiento}</p>
+                    `;
+                    container.appendChild(card);
+                });
+            } catch (err) {
+                console.error("Error cargando personas:", err);
+            }
+        }
+
+        cargarPersonas();
+    </script>
+</body>
+</html>
