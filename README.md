@@ -7,16 +7,18 @@ Para poder correr el programa necesitaremos lo siguiente:
 3. Crear y activer el entorno virtual desde la terminal con el comando:
    python -m venv venv
    .\venv\Scripts\activate
+   (Colocar las 2 lineas de comando a la vez)
+   (Aqui dar clic en "aceptar" en la pequeña ventana emergente que saldra)
    
 5. Instalar flask y requests desde la terminal - usar los comandos:
    pip install flask
 luego usar:
    pip install requests
    
-6. Correr el programa desde la terminal - usar los comandos: 
+6. Correr el programa desde la terminal - usar el comando: 
 export FLASK_APP=app.py 
-Luego usar:
 flask run
+(Colocar las 2 lineas de comandos a la vez).
 
 7. Con el paso 4 se nos proporcionara una url(local). Se puede copiar la url y seguidamente pegar en el navegador, para que se muestre la pagina.
 
