@@ -16,9 +16,7 @@ luego usar:
    pip install requests
    
 6. Correr el programa desde la terminal - usar el comando: 
-export FLASK_APP=app.py 
 flask run
-(Colocar las 2 lineas de comandos a la vez).
 
 7. Con el paso 4 se nos proporcionara una url(local). Se puede copiar la url y seguidamente pegar en el navegador, para que se muestre la pagina.
 
